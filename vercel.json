@@ -1,0 +1,6 @@
+{
+    "env": {
+        "HIPSTALOG_FAUNADB_KEY": "@hipstalog-faunadb-key",
+        "HIPSTALOG_CALLER_KEY": "@hipstalog-caller-key"
+    }
+}
