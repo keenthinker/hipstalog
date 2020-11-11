@@ -4,9 +4,8 @@ function theCallerIsAllowedToUseTheLog(secretKey) {
     return secretKey === process.env.HIPSTALOG_CALLER_KEY;
 }
 
-function theQueryParameterIsCorrect(queryParameter) {
-
-}
+// function theQueryParameterIsCorrect(queryParameter) {
+// }
 
 module.exports = (req, res) => {
     const doh = `D'oh. ಠ_ಠ`;
@@ -18,6 +17,7 @@ module.exports = (req, res) => {
         logCounterType(name).then(ret => {
             res.status(200).json({ 'message': `Created new '${name}' entry (${now})` });
         });
+        return;
     }
     res.status(403).json({ 'error': doh });
 }
